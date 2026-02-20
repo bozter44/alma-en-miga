@@ -99,7 +99,7 @@ function nombreParaPedido(producto) {
 }
 
 function generarPedido(tipo, detalle, total) {
-  const miTelefono = "5491144788729";
+  const miTelefono = "5493795375199";
   const mensajeBase = `*🍰 Nuevo Pedido - Alma en Miga 🍰*%0A%0A`;
   const cuerpo = `*• Tipo:* ${tipo}%0A*• Detalle:* ${detalle}%0A*• Total:* ${total}`;
   const cierre = `%0A%0A*---*%0A_Pedido generado desde la web_`;
