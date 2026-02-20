@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alma en Miga | Pasteleria Artesanal</title>
+    <meta
+      name="description"
+      content="Landing page de Alma en Miga: catalogo artesanal y configurador de box personalizada con envio por WhatsApp."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="grain-layer" aria-hidden="true"></div>
+      <nav class="top-nav container">
+        <a href="#inicio" class="brand-lockup" aria-label="Inicio Alma en Miga">
+          <img src="./brand-logo.svg" alt="Logo Alma en Miga" class="brand-logo" />
+          <div class="brand-copy">
+            <p class="brand">ALMA EN MIGA</p>
+            <p class="brand-sub">REPOSTERIA & PANADERIA</p>
+          </div>
+        </a>
+        <a href="#box" class="nav-link">Arma tu Box</a>
+      </nav>
+
+      <div class="hero-content container">
+        <div class="hero-text">
+          <p class="hero-tag">Hecho a mano en Lanus</p>
+          <h1>Alma en Miga: Pasteleria con historia</h1>
+          <p>
+            Sabores nobles, recetas de familia y mucha dedicacion en cada horneada.
+            Descubri nuestras piezas artesanales y pedi en segundos por WhatsApp.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#catalogo" class="btn btn-primary">Ver Catalogo</a>
+            <a href="#box" class="btn btn-outline">Arma tu Box</a>
+          </div>
+        </div>
+
+        <aside class="hero-mark-card">
+          <img src="./brand-logo.svg" alt="" aria-hidden="true" loading="lazy" />
+          <p>
+            Reposteria y panaderia artesanal de lotes pequenos, hecha para compartir.
+          </p>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section id="catalogo" class="section container">
+        <header class="section-header">
+          <p class="section-kicker">Tienda artesanal</p>
+          <h2>Catalogo destacado</h2>
+        </header>
+        <div id="catalogGrid" class="catalog-grid"></div>
+      </section>
+
+      <section id="box" class="section section-box">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-kicker">Experiencia personalizada</p>
+            <h2>Arma tu Box</h2>
+          </header>
+
+          <div class="size-selector" role="group" aria-label="Seleccion de tamano de caja">
+            <button type="button" class="size-btn is-active" data-size="6">Caja x6</button>
+            <button type="button" class="size-btn" data-size="12">Caja x12</button>
+          </div>
+
+          <p id="boxCounter" class="box-counter">Llevas 0/6 unidades seleccionadas.</p>
+          <div id="boxGrid" class="box-grid"></div>
+
+          <div class="box-summary">
+            <div>
+              <p class="box-total-label">Total estimado</p>
+              <p id="boxTotal" class="box-total">$0</p>
+            </div>
+            <button id="sendBoxBtn" type="button" class="btn btn-secondary" disabled>
+              Pedir mi Box Personalizada
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="logistica" class="section container logistics">
+        <header class="section-header">
+          <p class="section-kicker">Envios</p>
+          <h2>Zona de cobertura</h2>
+        </header>
+
+        <div class="logistics-content">
+          <div class="location-pin" aria-hidden="true"></div>
+          <p>
+            Llegamos a tu domicilio en Lanus y alrededores
+            <strong>(Radio de 5 km)</strong>.
+          </p>
+        </div>
+
+        <div class="map-card" role="img" aria-label="Cobertura de envio en Lanus y alrededores">
+          <div class="map-center">Lanus</div>
+          <div class="map-ring"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Alma en Miga - Pasteleria artesanal en Lanus.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
