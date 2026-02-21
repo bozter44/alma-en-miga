@@ -5,7 +5,7 @@ const catalogoProductos = [
     descripcion: "Version tradicional. Precio por porcion de 100g.",
     precio: 1600,
     unidad: "100g",
-    imagen: "Chipa.jpeg",
+    imagen: "scons.jpg,
   },
   {
     id: "chipa-tradicional",
@@ -13,7 +13,7 @@ const catalogoProductos = [
     descripcion: "Receta clasica de queso. Precio por porcion de 100g.",
     precio: 1800,
     unidad: "100g",
-    imagen: "./assets/catalogo/chipa.jpeg",
+    imagen: "Chipa.jpeg",
   },
   {
     id: "brownie-pack-6",
@@ -21,7 +21,7 @@ const catalogoProductos = [
     descripcion: "Pack cerrado de 6 brownies.",
     precio: 10000,
     esPack: true,
-    imagen: "./assets/catalogo/brownie-pack-x6.jpeg",
+    imagen: "brownie-pack-x6.jpeg",
   },
   {
     id: "brownie-pack-12",
@@ -29,7 +29,7 @@ const catalogoProductos = [
     descripcion: "Pack cerrado de 12 brownies.",
     precio: 18000,
     esPack: true,
-    imagen: "./assets/catalogo/brownie-pack-x12.jpeg",
+    imagen: "brownie-pack-x12.jpeg",
   },
   {
     id: "rolls-chocolate",
@@ -38,7 +38,7 @@ const catalogoProductos = [
     precio: 2500,
     descuentoDesde: 2,
     precioConDescuento: 2000,
-    imagen: "./assets/catalogo/rolls-chocolate.jpeg",
+    imagen: "rolls-chocolate.jpeg",
   },
 ];
 
