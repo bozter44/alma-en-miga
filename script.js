@@ -1,83 +1,54 @@
-const catalogoProductos = [
-  {
-    id: "scons",
-    nombre: "Scons",
-    descripcion: "Version tradicional. Precio por porcion de 100g.",
-    precio: 1600,
-    unidad: "100g",
-    imagen: "./assets/catalogo/scons.jpg",
-  },
-  {
-    id: "chipa-tradicional",
-    nombre: "Chipa (Tradicional)",
-    descripcion: "Receta clasica de queso. Precio por porcion de 100g.",
-    precio: 1800,
-    unidad: "100g",
-    imagen: "./assets/catalogo/chipa.jpeg",
-  },
-  {
-    id: "brownie-pack-6",
-    nombre: "Brownie Pack x6",
-    descripcion: "Pack cerrado de 6 brownies.",
-    precio: 10000,
-    esPack: true,
-    imagen: "./assets/catalogo/brownie-pack-x6.jpeg",
-  },
-  {
-    id: "brownie-pack-12",
-    nombre: "Brownie Pack x12",
-    descripcion: "Pack cerrado de 12 brownies.",
-    precio: 18000,
-    esPack: true,
-    imagen: "./assets/catalogo/brownie-pack-x12.jpeg",
-  },
-  {
-    id: "rolls-chocolate",
-    nombre: "Rolls de Chocolate",
-    descripcion: "Masa suave rellena de chocolate.",
-    precio: 2500,
-    descuentoDesde: 2,
-    precioConDescuento: 2000,
-    imagen: "./assets/catalogo/rolls-chocolate.jpeg",
-  },
+const productos = [
+    {
+        id: "chipa-tradicional",
+        nombre: "Chipa (Tradicional)",
+        descripcion: "Receta clásica de queso. Precio por porción de 100g.",
+        precio: 1800,
+        unidad: "100g",
+        imagen: "chipa.jpeg"
+    },
+    {
+        id: "scons-dulces",
+        nombre: "Scons",
+        descripcion: "Scons caseros, ideales para el té.",
+        precio: 1500,
+        unidad: "unidad",
+        imagen: "scons.jpg"
+    },
+    {
+        id: "brownie-pack-x12",
+        nombre: "Pack Brownies x12",
+        descripcion: "Caja de 12 brownies artesanales decorados.",
+        precio: 4500,
+        unidad: "12 unidades",
+        imagen: "brownie-pack-x12.jpeg"
+    },
+    {
+        id: "rolls-chocolate",
+        nombre: "Rolls de Chocolate",
+        descripcion: "Rollos esponjosos rellenos de chocolate.",
+        precio: 2200,
+        unidad: "unidad",
+        imagen: "rolls-chocolate.jpeg"
+    }
 ];
 
-const productosBox = [
-  {
-    id: "scons",
-    nombre: "Scons",
-    precio: 1600,
-    unidad: "100g",
-  },
-  {
-    id: "chipa-tradicional",
-    nombre: "Chipa (Tradicional)",
-    precio: 1800,
-    unidad: "100g",
-  },
-  {
-    id: "rolls-chocolate",
-    nombre: "Rolls de Chocolate",
-    precio: 2500,
-    descuentoDesde: 2,
-    precioConDescuento: 2000,
-  },
-];
+// Función básica para mostrar los productos
+function renderizarCatalogo() {
+    const grid = document.getElementById('catalogGrid');
+    if (!grid) return;
+    
+    grid.innerHTML = productos.map(p => `
+        <div class="product-card">
+            <img src="${p.imagen}" alt="${p.nombre}">
+            <h3>${p.nombre}</h3>
+            <p>${p.descripcion}</p>
+            <p><strong>$${p.precio}</strong></p>
+        </div>
+    `).join('');
+}
 
-const productosCongelados = [
-  {
-    id: "scones-congelados",
-    nombre: "Scones congelados",
-    precio: 1400,
-    unidad: "100g",
-  },
-  {
-    id: "chipa-congelados",
-    nombre: "Chipa congelados",
-    precio: 1600,
-    unidad: "100g",
-  },
-];
+document.addEventListener('DOMContentLoaded', renderizarCatalogo);
 
 const catalogGrid = document.getElementById("catalogGrid");
 
