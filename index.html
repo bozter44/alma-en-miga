@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="icon" type="image/png" href="./assets/brand-logo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alma en Miga | Pasteleria Artesanal</title>
+    <meta
+      name="description"
+      content="Landing page de Alma en Miga: catalogo artesanal y configurador de box personalizada con envio por WhatsApp."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+ </head>
+  <body>
+    <header class="hero" id="inicio">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="grain-layer" aria-hidden="true"></div>
+      <nav class="top-nav container">
+        <a href="#inicio" class="brand-lockup" aria-label="Inicio Alma en Miga">
+          <img src="./assets/brand-logo.png" alt="Logo Alma en Miga" class="brand-logo" />
+          <div class="brand-copy">
+            <p class="brand">ALMA EN MIGA</p>
+            <p class="brand-sub">REPOSTERIA & PANADERIA</p>
+          </div>
+        </a>
+        <a href="#box" class="nav-link">Arma tu Box</a>
+      </nav>
+
+      <div class="hero-content container">
+        <div class="hero-text">
+          <p class="hero-tag">Hecho a mano en Corrientes Capital</p>
+          <h1>Alma en Miga: Pasteleria con historia</h1>
+          <p>
+            Sabores nobles, recetas de familia y mucha dedicacion en cada horneada.
+            Descubri nuestras piezas artesanales y pedi en segundos por WhatsApp.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#catalogo" class="btn btn-primary">Ver Catalogo</a>
+            <a href="#box" class="btn btn-outline">Arma tu Box</a>
+          </div>
+        </div>
+
+        <aside class="hero-mark-card">
+          <img src="./assets/brand-logo.png" alt="" aria-hidden="true" loading="lazy" />
+          <p>
+            Reposteria y panaderia artesanal de lotes pequenos, hecha para compartir.
+          </p>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section id="catalogo" class="section container">
+        <header class="section-header">
+          <p class="section-kicker">Tienda artesanal</p>
+          <h2>Catalogo destacado</h2>
+        </header>
+        <div id="catalogGrid" class="catalog-grid"></div>
+      </section>
+
+      <section id="box" class="section section-box">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-kicker">Experiencia personalizada</p>
+            <h2>Arma tu Box</h2>
+          </header>
+
+          <p id="boxCounter" class="box-counter">
+            Agrega lo que quieras. Llevas 0 unidades seleccionadas.
+          </p>
+          <div id="boxGrid" class="box-grid"></div>
+
+          <div class="box-summary">
+            <div>
+              <p class="box-total-label">Total estimado</p>
+              <p id="boxTotal" class="box-total">$0</p>
+            </div>
+            <button id="sendBoxBtn" type="button" class="btn btn-secondary" disabled>
+              Finalizar compra
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="congelados" class="section section-box section-frozen">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-kicker">Linea freezer</p>
+            <h2>Congelados</h2>
+          </header>
+
+          <p id="frozenCounter" class="box-counter">
+            Agrega lo que quieras. Llevas 0 unidades seleccionadas.
+          </p>
+          <div id="frozenGrid" class="box-grid"></div>
+
+          <div class="box-summary">
+            <div>
+              <p class="box-total-label">Total estimado</p>
+              <p id="frozenTotal" class="box-total">$0</p>
+            </div>
+            <button id="sendFrozenBtn" type="button" class="btn btn-secondary" disabled>
+              Finalizar compra
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="logistica" class="section container logistics">
+        <header class="section-header">
+          <p class="section-kicker">Envios</p>
+          <h2>Zona de cobertura</h2>
+        </header>
+
+        <div class="logistics-content">
+          <div class="location-pin" aria-hidden="true"></div>
+          <p>
+            Llegamos a tu domicilio en Corrientes Capital y alrededores
+            <strong>(Radio de 5 km)</strong>.
+          </p>
+        </div>
+
+        <div class="map-card" aria-label="Mapa fijo de cobertura en Corrientes Capital y alrededores">
+          <iframe
+            class="map-frame"
+            title="Mapa fijo de Corrientes Capital y alrededores"
+            loading="lazy"
+            src="https://maps.google.com/maps?q=Corrientes%20Capital%2C%20Corrientes%2C%20Argentina&amp;t=m&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+          ></iframe>
+          <p class="map-overlay">Radio aproximado de 5 km desde Corrientes Capital</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Alma en Miga - Pasteleria artesanal en Corrientes Capital.</p>
+      <p>
+        Instagram:
+        <a
+          class="footer-link"
+          href="https://www.instagram.com/almaenmiga/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >@almaenmiga</a
+        >
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
