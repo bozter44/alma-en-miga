@@ -5,7 +5,7 @@ const catalogoProductos = [
     descripcion: "Version tradicional. Precio por porcion de 100g.",
     precio: 1600,
     unidad: "100g",
-    imagen: "./assets/catalogo/scons.jpg",
+    imagen: "Chipa.jpeg",
   },
   {
     id: "chipa-tradicional",
