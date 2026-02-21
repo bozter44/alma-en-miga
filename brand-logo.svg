@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 270" role="img" aria-labelledby="title desc">
+  <title id="title">Logo ilustrado Alma en Miga</title>
+  <desc id="desc">Ilustracion de un gatito sobre un pan en tonos marrones y crema.</desc>
+
+  <rect width="360" height="270" rx="26" fill="#ede9e6" />
+
+  <g fill="none" stroke="#8a4a21" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="182" cy="194" rx="112" ry="34" fill="#8a4a21" />
+
+    <path
+      d="M112 162c-15-13-24-32-24-53 0-18 6-34 17-46-3-9-3-18 1-25 7-9 21-9 31-4 8-9 20-15 34-15 14 0 26 5 35 14 10-4 23-3 30 6 5 7 5 17 2 25 11 12 17 28 17 45 0 23-11 43-28 56"
+      fill="#efe2d0"
+      stroke-width="6"
+    />
+
+    <path d="M131 56l21-17 17 23" fill="#efe2d0" stroke-width="6" />
+    <path d="M231 58l-21-17-16 23" fill="#efe2d0" stroke-width="6" />
+
+    <path d="M74 174c-18-2-30-17-28-31 2-15 15-24 30-21" stroke-width="11" />
+
+    <path d="M151 184c12-15 42-15 55 0" fill="#efe2d0" stroke-width="6" />
+    <path d="M120 168c19 0 28 10 30 22" fill="#efe2d0" stroke-width="6" />
+    <path d="M239 168c-19 0-28 10-30 22" fill="#efe2d0" stroke-width="6" />
+
+    <ellipse cx="157" cy="103" rx="5" ry="7" fill="#8a4a21" stroke-width="0" />
+    <ellipse cx="206" cy="103" rx="5" ry="7" fill="#8a4a21" stroke-width="0" />
+
+    <path d="M171 122c4 6 14 6 18 0" stroke-width="6" />
+    <path d="M181 114v8" stroke-width="6" />
+
+    <path d="M132 114l-12-4" stroke-width="5" />
+    <path d="M135 123l-12 4" stroke-width="5" />
+    <path d="M230 114l12-4" stroke-width="5" />
+    <path d="M227 123l12 4" stroke-width="5" />
+  </g>
+</svg>
